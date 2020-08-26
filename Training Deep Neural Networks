@@ -293,7 +293,7 @@ history = model_B.fit(X_train_B, y_train_B, epochs=20,
 
 model.summary()
 
-model_A = keras.models.load_model("my_model_A.h5")
+model_A = keras.models.load_model("model_A.h5")
 model_B_on_A = keras.models.Sequential(model_A.layers[:-1])
 model_B_on_A.add(keras.layers.Dense(1, activation="sigmoid"))
 
