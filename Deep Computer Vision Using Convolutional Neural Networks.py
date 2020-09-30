@@ -318,7 +318,7 @@ def maximum_precision(precision):
 
 recalls = np.linespace(0, 1, 11)
 precisions = [0.91, 0.94, 0.96, 0.94, 0.95, 0.92, 0.80, 0.60, 0.45, 0.20, 0.10]
-max_precisions = maximum_precisions(precisions)
+max_precisions = maximum_precision(precisions)
 mAP = max_precisions.mean()
 plt.plot(recalls, precisions, "ro--", label="Precision")
 plt.plot(recalls, max_precisions, "bo-", label="Max Precision")
